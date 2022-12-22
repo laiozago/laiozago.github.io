@@ -5,7 +5,9 @@
     --cor-da-letra: #FEFCF3;
     --cor-de-fundo: rgba(0, 0, 0, 0.5)
 }
-
+html {
+    font-family: var(--fonte-primaria);
+}
 body {
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
@@ -35,4 +37,79 @@ body {
 	100% {
 		background-position: 0% 50%;
 	}
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.sidebar {
+    display: flex;
+    width: 30vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* background-color: #f0f0f0; */
+    padding: 1em;
+    
+}
+
+.secao {
+    background-color: var(--cor-da-letra);
+    width: -webkit-fill-available;
+    width: -moz-available;
+    margin-bottom: 1em;
+    border-radius: 5px;
+}
+
+.perfil_img {
+    width: 100%;
+    border-radius: 0.25em;
+}
+
+.filtro-de-projetos {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1em;
+}
+
+.filtro-de-projetos_titulo {
+    text-align: center;
+}
+
+.filtro-de-projetos_botoes {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.redes_titulo {
+    text-align: center;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.fa-square-twitter {
+    color: #00acee;
+}
+
+.fa-github {
+    color: #211b15;
+}
+
+.fa-linkedin {
+    color: #0e76a8
+}
+
+.fa-square-whatsapp {
+    color: #00bb2d;
+}
+
+.projetos {
+    background-color: #fff;
+    width: 50vw;
 }
