@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@200;300;400&display=swap');
+
+:root {
+    --fonte-primaria:'Chivo Mono', monospace;
+    --cor-da-letra: #FEFCF3;
+    --cor-de-fundo: rgba(0, 0, 0, 0.5)
+}
+
+body {
+    background-image: url(/assets/img/bronze-texture-for-background.jpg);
+    background-repeat: repeat;
+}
+
+.side-bar {
+    position: absolute;
+    top: 0px; 
+    left: 0px; 
+    visibility: visible; 
+    opacity: 1;
+    width: 255px;
+    margin: 2em;
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-da-letra);
+    font-family: var(--fonte-primaria);
+}
+
+.avatar {
+    width: 255px;
+    border-radius: 0.5em;
+}
+
+.sidebar>ul {
+    color:red
+    list-style-type: none;
+    padding: 0;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+}
