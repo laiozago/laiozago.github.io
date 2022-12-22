@@ -7,35 +7,32 @@
 }
 
 body {
-    background-image: url(/assets/img/bronze-texture-for-background.jpg);
-    background-repeat: repeat;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	-webkit-animation: gradient 15s ease infinite;
+	animation: gradient 15s ease infinite;
 }
 
-.side-bar {
-    position: absolute;
-    top: 0px; 
-    left: 0px; 
-    visibility: visible; 
-    opacity: 1;
-    width: 255px;
-    margin: 2em;
-    background-color: var(--cor-de-fundo);
-    color: var(--cor-da-letra);
-    font-family: var(--fonte-primaria);
+@-webkit-keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
-.avatar {
-    width: 255px;
-    border-radius: 0.5em;
-}
-
-.sidebar>ul {
-    color:red
-    list-style-type: none;
-    padding: 0;
-    font-size: 12px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin: 0;
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
