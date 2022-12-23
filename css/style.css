@@ -41,13 +41,13 @@ body {
 
 .box {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin: 1rem;
 }
 
 .sidebar {
     display: flex;
-    width: 30vw;
+    width: 25vw;
     flex-direction: row;
     flex-wrap: wrap;
     /* background-color: #f0f0f0; */
@@ -110,6 +110,9 @@ body {
 }
 
 .projetos {
-    background-color: #fff;
-    width: 50vw;
+    display: flex;
+    width: 55vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1em;
 }
