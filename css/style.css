@@ -48,6 +48,7 @@ body {
     display: flex;
     flex-direction: row;
     margin: 1rem;
+    justify-content: flex-start;
 }
 
 .sidebar {
@@ -120,4 +121,28 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     padding: 1em;
+}
+
+.contato_titulo {
+    text-align: center;
+}
+
+.contato_links_lista {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.card {
+    cursor: pointer;
+}
+
+/* texto não pode ser selecionado nos cards */
+.card-body .card-text {
+    -webkit-touch-callout: none;  /* iPhone OS, Safari */
+    -webkit-user-select: none;    /* Chrome, Safari 3 */
+    -khtml-user-select: none;     /* Safari 2 */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+ */
+    user-select: none;            /* Possível implementação no futuro */
 }
