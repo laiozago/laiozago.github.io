@@ -5,7 +5,7 @@
     --cor-da-letra: #FEFCF3;
     --cor-de-fundo: rgba(0, 0, 0, 0.5)
 }
-html {
+* {
     font-family: var(--fonte-primaria);
 }
 body {
@@ -37,6 +37,11 @@ body {
 	100% {
 		background-position: 0% 50%;
 	}
+}
+
+
+.container>a {
+    cursor: default;
 }
 
 .box {
