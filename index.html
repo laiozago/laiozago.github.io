@@ -20,104 +20,79 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand mx-auto" href="#"><i class="fa-brands fa-html5"></i></a>
-                <a class="navbar-brand mx-auto" href="#"><i class="fa-brands fa-css3-alt"></i></a>
-                <a class="navbar-brand mx-auto" href="#"><i class="fa-brands fa-js"></i></a>
-                <a class="navbar-brand mx-auto" href="#"><i class="fa-brands fa-react"></i></a>
-                <a class="navbar-brand mx-auto" href="#"><i class="fa-brands fa-node"></i></a>
-                <a class="navbar-brand mx-auto" href="#"><i class="fa-brands fa-git-alt"></i></a>
-                <a class="navbar-brand mx-auto" href="#"><i class="fa-brands fa-bootstrap"></i></a>
-            </div>
-        </nav>
+        <div class="tecnologias">
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+            <i class="fa-brands fa-js"></i>
+            <i class="fa-brands fa-react"></i>
+            <i class="fa-brands fa-node"></i>
+            <i class="fa-brands fa-git-alt"></i>
+            <i class="fa-brands fa-bootstrap"></i>
+        </div>
+        <div class="apresentacao">
+            <img class="apresentacao-imagem" src="./assets/img/perfil.png" alt="Minha foto de perfil">
+            <div class="apresentacao-info">
+                <h1 class="apresentacao-info--nome">Laio Zago</h1>
+                <p class="apresentacao-info--texto">Sou professor de matemática com turmas de ensino fundamental e médio. Nessa jornada em sala de aula aprendo diariamente, sobre mim mesmo, sobre liderança, organização, como lidar com pessoas e muito mais.</p>
+                <p class="apresentacao-info--texto">Atualmente faço curso de Desenvolcedor FullStack na GrowDev e busco oportunidade para contribuir e aplicar os novos conhecimentos.</p>
+                <p class="apresentacao-info--texto">Fique a vontade para passear pelos projetos.</p>
+            </div>    
+        </div>
     </header>
-    <main>
-        <section class="box container">
-            <section class="sidebar">
-                <section class="secao perfil">
-                    <img class="perfil_img" src="/assets/img/perfil.png" alt="">
-                    <h1 class="perfil_nome">Laio Zago</h1>
-                    <p class="perfil_texto">Sou professor de matemática com turmas de ensino fundamental e médio. Nessa jornada em 
-                            sala de aula aprendo diariamente, sobre mim mesmo, sobre liderança, organização, como 
-                            lidar com pessoas e muito mais.</p>
-                    <p class="perfil_texto">Atualmente faço curso de Desenvolcedor FullStack na GrowDev e busco oportunidade para contribuir e aplicar os novos conhecimentos.</p>
-                    <p class="perfil_texto">Fique a vontade para passear pelos projetos ao lado.</p>
-                </section>
-                <section class="secao filtro-de-projetos">
-                    <h3 class="filtro-de-projetos_titulo">Filtro de projetos</h3>
-                    <section class="filtro-de-projetos_botoes">
-                        <button type="button" class="btn btn-outline-dark">FrontEnd</button>
-                        <button type="button" class="btn btn-outline-dark">BackEnd</button>
-                    </section>
-                </section>
-                <section class="secao redes">
-                    <h3 class="redes_titulo">Redes Sociais</h3>
-                        <section class="redes_lista">
-                            <ul class="redes-sociais">
-                                <li><a href="https://github.com/laiozago" target="_blank"><i class="fa-brands fa-2xl fa-github"></i></a></li>
-                                <li><a href="https://twitter.com/laiozago" target="_blank"><i class="fa-brands fa-2xl fa-square-twitter"></i></a></li>
-                                <li><a href="https://www.linkedin.com/in/laiozago/" target="_blank"><i class="fa-brands fa-2xl fa-linkedin"></i></a></li>
-                            </ul>
-                        </section>
-                </section>
-                <section class="secao contato">
-                    <h3 class="contato_titulo">Contato</h3>
-                        <section class="contato_links">
-                            <ul class="contato_links_lista">
-                                <li><a href="https://api.whatsapp.com/send?phone=5521999036284" target="_blank"><i class="fa-brands fa-2xl fa-square-whatsapp"></i></a></li>
-                                <li><a href="mailto:laiozago@gmail.com?subject=Portifólio" target="_blank"><i class="fa-solid fa-2xl fa-envelope"></i></a></li>
-                            </ul>
-                        </section>
-                </section>
-            </section>
-            <section class="projetos row" data-masonry='{"percentPosition": true }'>
-                <!-- card projeto fruta e fruto -->
-                <div class="col-sm-6 col-lg-4 mb-4">
-                    <div class="card">
-                        <img src="/Projetos/fruta e fruto/src/img/receita-oriental.jpg" alt="Imagem de receita oriental para ilustrar." srcset="">
-                        <div class="card-body">
-                            <h5 class="card-title">Fruta e Fruto</h5>
-                            <p class="card-text">Site de receitas fit, desenvolvido para aprendizagem.</p>
-                        </div>
-                    </div>
+    <main class="principal">
+        <div class="projetos">
+            <div class="card" style="width: 18rem;">
+                <img src="./Projetos/numero-secreto-game/print.png" class="card-img-top" alt="print do site">
+                <div class="card-body">
+                    <h5 class="card-title">Jogo Número Secreto</h5>
+                    <p class="card-text">Projeto de jogo onde o jogador busca acertar o número sorteado. Jogador deve dizer seu palpite e seguir as dicas para acertar o número. </p>
+                    <a href="./Projetos/numero-secreto-game/index.html" class="btn btn-primary">Jogar</a>
                 </div>
-                <!-- card projeto flexbox Alurinha -->
-                <div class="col-sm-6 col-lg-4 mb-4">
-                    <div class="card">
-                        <img src="/Projetos/Alurinha - Flexbox/img/background1.svg" alt="imagem de ilustração">
-                        <div class="card-body">
-                            <h5 class="card-title">Alurinha cursos</h5>
-                            <p class="card-text">Site de cursos, feito com curso da alura sobre flexbox.</p>
-                        </div>
-                    </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./Projetos/fruta e fruto/src/img/receita-mix.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
-                <!-- card projeto jogo número secreto -->
-                <div class="col-sm-6 col-lg-4 mb-4">
-                    <div class="card">
-                        <img src="/Projetos/numero-secreto-game/print.png" alt="Imagem de ilustração." srcset="">
-                        <div class="card-body">
-                            <h5 class="card-title">Jogo - Número secreto</h5>
-                            <p class="card-text">Jogo de advinhar o número gerado "aleatóriamente" jogado por voz. Utilizei a API SpeechRecognition. Obs:Essa API só fuciona no navegador Google Chrome</p>
-                        </div>
-                    </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./Projetos/Alurinha - Flexbox/img/background1.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
-            </section>
-    </section>
-    </main>
-    <footer>
-        <div class="card bg-dark">
-            <div class="card-body mx-auto">
-                <p class="card-text text-light"><i class="fa-regular fa-copyright"></i> 2022 Laio Zago</p>
             </div>
         </div>
+    </main>
+    <footer class="rodape">
+        <div class="rodape-info">
+            <div class="info-contatos">
+                <h2 class="info-contato--titulo">Contato</h2>
+                <div class="info-contato--links">
+                    <a href="https://api.whatsapp.com/send?phone=5521999036284" target="_blank"><i class="fa-brands fa-2xl fa-square-whatsapp"></i></a>
+                    <a href="mailto:laiozago@gmail.com?subject=Portifólio" target="_blank"><i class="fa-solid fa-2xl fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="info-redes">
+                <h2 class="info-redes--titulo">Redes Sociais</h2>
+                <div class="info-redes--links">
+                    <a href="https://github.com/laiozago" target="_blank"><i class="fa-brands fa-2xl fa-github"></i></a>
+                    <a href="https://twitter.com/laiozago" target="_blank"><i class="fa-brands fa-2xl fa-square-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/laiozago/" target="_blank"><i class="fa-brands fa-2xl fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="rodape-copy">
+            <p class="card-text text-light"><i class="fa-regular fa-copyright"></i> 2022 Laio Zago</p>
+        </div>
     </footer>
-
+        
     <!-- Main js -->
     <script src="/js/main.js"></script>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <!-- Masonry -->
-    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
 </body>
 </html>
