@@ -8,6 +8,14 @@
 }
 * {
     font-family: var(--fonte-primaria);
+    /***** Texto não selecionável *****/
+    -webkit-touch-callout: none;  /* iPhone OS, Safari */
+    -webkit-user-select: none;    /* Chrome, Safari 3 */
+    -khtml-user-select: none;     /* Safari 2 */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+ */
+    user-select: none;            /* Possível implementação no futuro */
+    /***** End Section *****/
 }
 body {
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
