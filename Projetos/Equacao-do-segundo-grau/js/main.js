@@ -20,8 +20,8 @@ botaoCalcular.addEventListener("click", (evento) => {
 
     equacaoSegudoGrau(a,b,c)
 
-    document.querySelectorAll("[data-respostas]")[0].placeholder = solucao[0]
-    document.querySelectorAll("[data-respostas]")[1].placeholder = solucao[1]
-    document.querySelectorAll("[data-respostas]")[2].placeholder = solucao[2]
+    document.querySelectorAll("[data-respostas]")[0].placeholder = `x' = ${solucao[0]}`
+    document.querySelectorAll("[data-respostas]")[1].placeholder = `x'' = ${solucao[1]}`
+    document.querySelectorAll("[data-respostas]")[2].placeholder = `Delta = ${solucao[2]}`
 
 })
