@@ -114,6 +114,11 @@ body {
     padding: 1em;
 }
 
+.info-contato--links, .info-redes--links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .principal {
     width: 90vw;
     margin: auto;
@@ -150,7 +155,11 @@ body {
     color: #0E76A8;
 }
 
-.fa-square-whatsapp:hover, .fa-envelope:hover, .fa-github:hover, .fa-square-twitter:hover, .fa-linkedin:hover {
+.fa-discord {
+    color: rgb(92,100,244);
+}
+
+.fa-square-whatsapp:hover, .fa-envelope:hover, .fa-github:hover, .fa-square-twitter:hover, .fa-linkedin:hover, .fa-discord:hover {
     font-size: 2.5em;
     transition: 0.25s;
 }
