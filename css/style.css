@@ -102,8 +102,6 @@ body {
 
 .rodape-copy {
     background-color: var(--cor-de-fundo);
-    margin: 0 auto;
-    width: 100vw;
     text-align: center;
     padding: .5em 0;
 }
