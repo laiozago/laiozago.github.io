@@ -127,13 +127,21 @@ body {
 .projetos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     gap: 1em;
 }
 
 .card {
     margin-bottom: .5em;
     background-color: var(--cor-da-letra);
+}
+
+.projetos>div>img {
+    height: 227.95px;
+}
+
+#fruta-e-fruto_img {
+    object-fit: cover;
 }
 
 .fa-square-whatsapp {
@@ -181,5 +189,9 @@ body {
 
     .info-redes, .info-contatos {
         width: 90vw;
+    }
+
+    .projetos {
+        justify-content: center;
     }
 }
