@@ -136,6 +136,16 @@ body {
     background-color: var(--cor-da-letra);
 }
 
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-body>a {
+    width: 50%;
+}
+
 .projetos>div>img {
     height: 227.95px;
 }
@@ -193,5 +203,11 @@ body {
 
     .projetos {
         justify-content: center;
+    }
+}
+
+@media (max-width: 320px) {
+    .tecnologias>.fa-brands {
+        padding: 0;
     }
 }
