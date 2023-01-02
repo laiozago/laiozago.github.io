@@ -1,0 +1,24 @@
+body {
+    background-color: gold;
+}
+
+
+.cartao-rodape {
+    padding-left: 0.5rem;
+}
+
+.botao-email {
+    border: 2px solid #00aa4e;
+}
+
+.botao-whatsapp {
+    border: 2px solid #00aa4e;
+    background-color: transparent;
+    color: #00aa4e;
+    font-weight: 600;
+}
+
+.rodape {
+    background-color: rgb(248, 245, 202);
+    margin-top: 2rem;
+}

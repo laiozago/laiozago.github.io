@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esse triângulo existe</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- corpo do site -->
+    <div class="container">
+        <p class="text-center fs-1 fw-bolder">Confira se o triângulo existe</p>
+        <center>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-triangle"
+                viewBox="0 0 16 16">
+                <path
+                    d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z" />
+            </svg>
+        </center>
+        <p class="text-center fs-3 fw-bold">Lados do triângulo meden a, b e c</p>
+    </div>
+
+    <div class="row" style="margin-left:0.1rem; margin-right:0.1rem">
+        <div class="col">
+            <input type="number" class="form-control" placeholder="a" aria-label="a" data-parametros="a">
+        </div>
+        <div class="col">
+            <input type="number" class="form-control" placeholder="b" aria-label="b" data-parametros="b">
+        </div>
+        <div class="col">
+            <input type="number" class="form-control" placeholder="c" aria-label="c" data-parametros="c">
+        </div>
+        <div class="container text-center formulario-botao-conferir" style="margin-top:1rem; margin-bottom: 1rem;">
+            <button class="btn btn-primary btn-lg" type="submit" data-botao="conferir">Conferir</button>
+        </div>
+
+        <div class="col">
+            <input type="number" class="form-control fw-bold" disabled placeholder=""
+                aria-label="Resposta se existe ou não existe" data-resposta>
+        </div>
+
+    </div>
+
+    <div class="container container-historia">
+        <p class="lh-lg fs-5" style="padding-top:1rem;">
+            Um triângulo é uma figura plana formada por três lados que possuem uma determinada medida, mas essas não
+            podem
+            ser escolhidas aleatoriamente, é preciso seguir uma regra.
+
+            Só irá existir um triângulo se, e somente se, os seus lados obedeceram à seguinte regra: <u>qualquer um de
+                seus
+                lados deve
+                ser maior que o valor absoluto da diferença dos outros dois lados e menor que a soma dos outros dois
+                lados.</u>
+        </p>
+    </div>
+
+    <!-- Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    </script>
+    <!--main.js-->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
