@@ -1,25 +1,23 @@
-// Seleciona todos os itens da lista com a classe menu_lista
-const listItems = document.querySelectorAll('.menu_lista');
-//Seleciona o h1
-const titulo = document.querySelector('#titulo-texto');
-//Seleciona o display
-const display = document.querySelector('.display');
+const menuLista = document.querySelector('.menu_lista'); // Seleciona a lista de menu
+const tituloTexto = document.querySelector('#titulo-texto'); // Seleciona o título da página
+const display = document.querySelector('.display'); // Seleciona a div de display
 
-// Adiciona um evento de click a cada um dos itens da lista
-listItems.forEach(item => {
-    item.addEventListener('click', event => {
-    // Obtém o elemento clicado
-    const clickedItem = event.target;
+const conteudo = {
+    'Perfil': '<p>Conteúdo do perfil aqui</p><img src="foto.jpg" alt="Foto">',
+    'Curriculo': 'Conteúdo do currículo aqui',
+    'Projetos': 'Conteúdo dos projetos aqui',
+    'Contato': 'Conteúdo do contato aqui',
+};
 
-    // Seleciona os outros elementos do HTML que devem receber a classe
-    const otherElements = document.querySelectorAll('.other-element');
+menuLista.addEventListener('click', event => { // Adiciona um evento de clique na lista de menu
+  tituloTexto.textContent = event.target.textContent; // Atualiza o texto do título da página para o texto do li clicado
+  display.innerHTML = conteudo[event.target.textContent]; // Atualiza o conteúdo da div de display para o conteúdo correspondente ao li clicado
 
-    // Adiciona a classe "selected" ao elemento clicado
-    clickedItem.classList.add('selected');
+  // Remove a classe "selected" de todos os li
+    for (const li of menuLista.children) {
+    li.classList.remove('selected');
+}
 
-    // Remove a classe "selected" dos outros elementos
-    otherElements.forEach(element => {
-        element.classList.remove('selected');
-    });
-    });
+  // Adiciona a classe "selected" apenas no li clicado
+    event.target.classList.add('selected');
 });
