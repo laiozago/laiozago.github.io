@@ -7,6 +7,8 @@
     --raio-da-borda: 20px;
 }
 * {
+    margin: 0;
+    padding: 0;
     font-family: var(--fonte-primaria);
     /***** Texto não selecionável *****/
     -webkit-touch-callout: none;  /* iPhone OS, Safari */
@@ -17,18 +19,7 @@
     user-select: none;            /* Possível implementação no futuro */
     /***** End Section *****/
 }
-body {
-	/* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
-	background: linear-gradient(-45deg, #000, #1A4D2E, #FF9F29, #FAF3E3);
-	background-size: 400% 400%;
-	-webkit-animation: gradient 15s ease infinite;
-	animation: gradient 15s ease infinite;
-    min-height: 100vh;
-    font-family: var(--fonte-primaria);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+
 
 @-webkit-keyframes gradient {
 	0% {
@@ -54,6 +45,19 @@ body {
 	}
 }
 
+body {
+	/* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+	/* background: linear-gradient(-45deg, #0f0f0f, #ddd, #4d4c4c, #2b494b);
+	background-size: 400% 400%;
+	-webkit-animation: gradient 15s ease infinite;
+	animation: gradient 15s ease infinite; */
+    background-color: #ddd;
+    min-height: 100vh;
+    font-family: var(--fonte-primaria);
+    display: flex;
+    flex-direction: column;
+}
+
 .tecnologias {
     width: 100%;
     background-color: var(--cor-de-fundo);
@@ -70,34 +74,79 @@ body {
     padding: .5em;
 }
 
-.apresentacao {
-    display: flex;
-    flex-direction: row-reverse;
-    width: 90vw;
-    align-items: flex-start;
-    margin: auto;
-    margin-bottom: 1em;
-    margin-top: 1em;
-    padding: 1em;
-    background-color: var(--cor-da-letra);
-    border-radius: var(--raio-da-borda);
-}
-
-.apresentacao-imagem {
-    height: 20vw;
-    border-radius: var(--raio-da-borda);
-}
-
-.rodape {
+.principal {
     display: flex;
     flex-direction: column;
 }
 
-.rodape-info {
+#titulo-texto{
+    font-size: 3em;
+    background-color: #ddd;
+    text-align: center;
+    border-bottom: 2px solid black;
+    background: linear-gradient(-45deg, #ee7752, #ff8800, #23a6d5, #23d5ab);
+    -webkit-animation: gradient 60s ease infinite;
+	animation: gradient 60s ease infinite;
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.caixa {
     display: flex;
-    justify-content: space-between;
-    width: 90vw;
-    margin: 1em auto .5em auto;
+    gap: 2em;
+    padding: .5em;
+    align-items: center;
+}
+
+.menu {
+    border: 1px solid #000;
+    align-items: center;
+    border-radius: 1em;
+    background: linear-gradient(-45deg, #ee7752, #ff8800, #23a6d5, #23d5ab);
+    -webkit-animation: gradient 60s ease infinite;
+	animation: gradient 60s ease infinite;
+    background-size: 400% 400%;
+    padding: 1em;
+    height: 40vh;
+}
+
+ul.menu_lista {
+    margin: 0;
+    padding: 0;
+    width: 12vw;
+    display: flex;
+    flex-direction: column;
+    display: inline-block;
+}
+
+.menu_lista>li{
+    text-align:left;
+    cursor: pointer;
+    margin-bottom: 1em;
+}
+
+li.selected {
+    color: #000;
+    border-bottom: 2px solid #0f0f0f;
+}
+
+li:hover {
+    border: 2px dashed #0f0f0f;
+}
+
+.display {
+    border: 1px solid black;
+    height: 70vh;
+    width: 80vw;
+}
+
+.rodape {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .rodape-copy {
@@ -108,110 +157,4 @@ body {
 
 .rodape-copy>p {
     font-size: xx-small;
-}
-
-.info-redes, .info-contatos {
-    text-align: center;
-    width: 35%;
-    background-color: var(--cor-da-letra);
-    border-radius: var(--raio-da-borda);
-    padding: 1em;
-}
-
-.info-contato--links, .info-redes--links {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.principal {
-    width: 90vw;
-    margin: auto;
-}
-
-.projetos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 1em;
-}
-
-.card {
-    margin-bottom: .5em;
-    background-color: var(--cor-da-letra);
-}
-
-.card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.card-body>a {
-    width: 50%;
-}
-
-.projetos>div>img {
-    height: 227.95px;
-}
-
-#fruta-e-fruto_img {
-    object-fit: cover;
-}
-
-.fa-square-whatsapp {
-    color: rgb(60,220,124);
-}
-
-.fa-envelope {
-    color: #3b60c4;
-}
-
-.fa-github {
-    color: #171515;
-}
-
-.fa-square-twitter {
-    color: #00ACEE;
-}
-
-.fa-linkedin {
-    color: #0E76A8;
-}
-
-.fa-discord {
-    color: rgb(92,100,244);
-}
-
-.fa-square-whatsapp:hover, .fa-envelope:hover, .fa-github:hover, .fa-square-twitter:hover, .fa-linkedin:hover, .fa-discord:hover {
-    font-size: 2.5em;
-    transition: 0.25s;
-}
-
-@media (max-width: 768px) {
-    .apresentacao-imagem {
-        display: none;
-    }
-
-    .rodape-info {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .info-contatos {
-        margin-bottom: 0.5em;
-    }
-
-    .info-redes, .info-contatos {
-        width: 90vw;
-    }
-
-    .projetos {
-        justify-content: center;
-    }
-}
-
-@media (max-width: 320px) {
-    .tecnologias>.fa-brands {
-        padding: 0;
-    }
 }
