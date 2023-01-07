@@ -3,11 +3,13 @@ const tituloTexto = document.querySelector('#titulo-texto'); // Seleciona o tít
 const display = document.querySelector('.display'); // Seleciona a div de display
 
 const conteudo = {
-    'Perfil': '<p>Conteúdo do perfil aqui</p><img src="foto.jpg" alt="Foto">',
-    'Curriculo': 'Conteúdo do currículo aqui',
+    'Perfil': '<p>Conteúdo do perfil aqui</p><img height=200px src="assets/img/perfil.webp" alt="Foto">',
+    'Curriculo': '<iframe style="width:100%; height:100%" src="/media/laiozago/BACKUP-LAIO/backup 31.12.2022/laiozago.com.br/Equacao_do_segundo_grau/index.html"></iframe>',
     'Projetos': 'Conteúdo dos projetos aqui',
     'Contato': 'Conteúdo do contato aqui',
 };
+
+display.innerHTML = conteudo['Perfil']; // Carrega o conteúdo do perfil para a div de display
 
 menuLista.addEventListener('click', event => { // Adiciona um evento de clique na lista de menu
   tituloTexto.textContent = event.target.textContent; // Atualiza o texto do título da página para o texto do li clicado
