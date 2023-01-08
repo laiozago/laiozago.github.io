@@ -143,6 +143,11 @@ li:hover {
     width: 80vw;
 }
 
+.object_curriculo {
+    width: 100%;
+    height: 100%;
+}
+
 .rodape {
     position: fixed;
     bottom: 0;
