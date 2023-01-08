@@ -4,9 +4,12 @@ const display = document.querySelector('.display'); // Seleciona a div de displa
 
 const conteudo = {
     'Perfil': `
+    <div>
+    <img class="perfil_imagem" src="./assets/img/perfil.webp" alt="Minha foto de perfil">
     <h1 class="apresentacao-info--nome">Laio Zago</h1>
     <p class="apresentacao-info--texto">Sou professor de matemática com turmas de ensino fundamental e médio. Nessa jornada em sala de aula aprendo diariamente, sobre mim mesmo, sobre liderança, organização, como lidar com pessoas e muito mais.</p>
     <p class="apresentacao-info--texto">Atualmente faço curso de Desenvolcedor FullStack na GrowDev e busco oportunidade para contribuir e aplicar os novos conhecimentos.</p>
+    </div>
     `,
     'Curriculo': `
     <object class="object_curriculo" data="./assets/Currículo.pdf" type="application/pdf">

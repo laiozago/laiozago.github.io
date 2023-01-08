@@ -128,11 +128,12 @@ ul.menu_lista {
 
 li.selected {
     color: #000;
-    border-bottom: 2px solid #0f0f0f;
+    border: 2px dashed #0f0f0f;
 }
 
 li:hover {
-    border: 2px dashed #0f0f0f;
+    color: red;
+    transition: .3s;
 }
 
 .display {
@@ -140,6 +141,13 @@ li:hover {
     height: 70vh;
     width: 80vw;
     overflow-y: auto;
+    position: relative;
+}
+
+.perfil_imagem {
+    width: 150px;
+    float: right;
+    margin: .3em;
 }
 
 .object_curriculo {
