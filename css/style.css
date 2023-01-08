@@ -110,16 +110,14 @@ body {
 	animation: gradient 60s ease infinite;
     background-size: 400% 400%;
     padding: 1em;
-    height: 40vh;
+    display: flex;
 }
 
 ul.menu_lista {
     margin: 0;
     padding: 0;
-    width: 12vw;
     display: flex;
     flex-direction: column;
-    display: inline-block;
 }
 
 .menu_lista>li{
@@ -141,11 +139,46 @@ li:hover {
     border: 1px solid black;
     height: 70vh;
     width: 80vw;
+    overflow-y: auto;
 }
 
 .object_curriculo {
     width: 100%;
     height: 100%;
+}
+
+.info-redes, .info-contatos {
+    text-align: center;
+    padding: 1em;
+}
+
+.fa-square-whatsapp {
+    color: rgb(60,220,124);
+}
+
+.fa-envelope {
+    color: #3b60c4;
+}
+
+.fa-github {
+    color: #171515;
+}
+
+.fa-square-twitter {
+    color: #00ACEE;
+}
+
+.fa-linkedin {
+    color: #0E76A8;
+}
+
+.fa-discord {
+    color: rgb(92,100,244);
+}
+
+.fa-square-whatsapp:hover, .fa-envelope:hover, .fa-github:hover, .fa-square-twitter:hover, .fa-linkedin:hover, .fa-discord:hover {
+    font-size: 2.5em;
+    transition: 0.25s;
 }
 
 .rodape {
@@ -162,4 +195,25 @@ li:hover {
 
 .rodape-copy>p {
     font-size: xx-small;
+}
+
+@media (max-width: 768px) {
+    .caixa {
+        flex-direction: column;
+    }
+
+    ul.menu_lista {
+        flex-direction: row;
+        gap: 1em;
+    }
+
+    .display {
+        height: 60vh;
+    }
+}
+
+@media (max-width: 320px) {
+    header {
+        display: none;
+    }
 }
