@@ -85,8 +85,8 @@ body {
     text-align: center;
     border-bottom: 2px solid black;
     background: linear-gradient(-45deg, #ee7752, #ff8800, #23a6d5, #23d5ab);
-    -webkit-animation: gradient 60s ease infinite;
-	animation: gradient 60s ease infinite;
+    -webkit-animation: gradient 30s ease infinite;
+	animation: gradient 30s ease infinite;
     background-size: 400% 400%;
     -webkit-background-clip: text;
     background-clip: text;
@@ -106,8 +106,8 @@ body {
     align-items: center;
     border-radius: 1em;
     background: linear-gradient(-45deg, #ee7752, #ff8800, #23a6d5, #23d5ab);
-    -webkit-animation: gradient 60s ease infinite;
-	animation: gradient 60s ease infinite;
+    -webkit-animation: gradient 30s ease infinite;
+	animation: gradient 30s ease infinite;
     background-size: 400% 400%;
     padding: 1em;
     display: flex;
