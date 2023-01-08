@@ -218,6 +218,11 @@ li:hover {
     .display {
         height: 60vh;
     }
+
+    .menu_lista>li {
+        margin: 0;
+        padding: 0;
+    }
 }
 
 @media (max-width: 320px) {
