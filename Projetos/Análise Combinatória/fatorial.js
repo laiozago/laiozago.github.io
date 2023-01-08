@@ -1,4 +1,4 @@
-function fatorial(n) {
+const fatorial=(n) => {
     // Verifica se o argumento passado é um número inteiro positivo
     if (typeof n !== 'number' || n < 0 || n % 1 !== 0 || n > 120) {
         throw new Error(
@@ -15,4 +15,4 @@ function fatorial(n) {
     return n * fatorial(n - 1);
 }
 
-//console.log(fatorial(10));
+console.log(fatorial(10));
