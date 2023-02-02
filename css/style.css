@@ -205,6 +205,11 @@ li:hover {
     font-size: xx-small;
 }
 
+.carousel-inner .carousel-item img {
+    height: 70vh;
+    object-fit: fill;
+}
+
 @media (max-width: 768px) {
     .caixa {
         flex-direction: column;

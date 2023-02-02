@@ -16,7 +16,56 @@ const conteudo = {
       <p>Seu navegador não suporta o elemento <code>object</code>. Clique aqui para <a download href="./assets/Currículo.pdf">baixar o arquivo PDF</a>.</p>
     </object>
     `,
-    'Projetos': 'Conteúdo dos projetos aqui',
+    'Projetos': `
+<div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+        <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"></button>
+        <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <a href="Projetos/esseTrianguloExiste/index.html" target="_blank" rel="noopener noreferrer">
+                <img src="Projetos/esseTrianguloExiste/Captura de tela de 2023-02-01 23-13-56.png" class="d-block w-100" alt="Printscreen da página esse triângulo existe."></a></div>
+            <div class="carousel-item">
+            <a href="Projetos/Equacao-do-segundo-grau/index.html" target="_blank" rel="noopener noreferrer">
+                <img src="Projetos/Equacao-do-segundo-grau/assets/img/print.webp" class="d-block w-100" alt="Printscreen da página que resolve equação do segundo grau."></a></div>
+                <div class="carousel-item">
+                <a href="Projetos/numero-secreto-game/index.html" target="_blank" rel="noopener noreferrer">
+                    <img src="Projetos/numero-secreto-game/print_1.webp" class="d-block w-100" alt="Tela inicial do jogo e adivinhar o número."></a></div>
+                </div>
+                <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+    `,
     'Contato': `
     <div class="rodape-info">
     <div class="info-contatos">
