@@ -52,4 +52,4 @@ const trianguloDePascal=(n) => {
     }
 }
 
-console.log(trianguloDePascal(15))
+trianguloDePascal(15);
