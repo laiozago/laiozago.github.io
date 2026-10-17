@@ -2,59 +2,182 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Página portifólio, com meus pricipais projetos.">
-    <meta name="keywords" content="portifolio,javascript,dev,developer,front-end">
-    <!-- reset css -->
-    <link rel="stylesheet" href="/css/reset.css">
-    <!-- font awsome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Bootstrap css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <!-- style css -->
-    <link rel="stylesheet" href="/css/style.css">
-    <!-- favicon -->
-    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
-    <!-- fontes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@200;300;400&display=swap" rel="stylesheet">
-    <title>Portifólio | Laio Zago</title>
+    <title>Laio Zago | Professor de Matemática</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #1e1e1e; /* Estilo Manim / Lousa Digital */
+            color: #ececec; 
+            margin: 0; 
+            padding: 0; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+        }
+        header { 
+            text-align: center; 
+            padding: 5rem 1rem 2rem; 
+            width: 100%;
+            background-color: #121212;
+            border-bottom: 3px solid #00d2ff;
+        }
+        h1 { 
+            font-size: 3.5rem; 
+            margin: 0; 
+            color: #ffffff; 
+            letter-spacing: -1px;
+        }
+        h2 { 
+            font-size: 1.5rem; 
+            color: #00d2ff; 
+            font-weight: 400; 
+            margin-top: 0.5rem; 
+        }
+        main { 
+            max-width: 800px; 
+            padding: 3rem 2rem; 
+            width: 100%; 
+            box-sizing: border-box; 
+        }
+        .section { 
+            background-color: #252526; 
+            border-radius: 12px; 
+            padding: 2rem; 
+            margin-bottom: 2rem; 
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2); 
+            border-left: 4px solid #00d2ff;
+        }
+        h3 { 
+            margin-top: 0;
+            font-size: 1.8rem;
+            color: #ffffff; 
+            margin-bottom: 1rem;
+        }
+        p, li { 
+            line-height: 1.8; 
+            font-size: 1.1rem;
+            color: #cccccc;
+        }
+        ul {
+            padding-left: 1.5rem;
+        }
+        .skills { 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 0.8rem; 
+            margin-top: 1rem;
+        }
+        .skill-tag { 
+            background-color: #333333; 
+            color: #00d2ff;
+            padding: 0.6rem 1.2rem; 
+            border-radius: 8px; 
+            font-size: 0.95rem; 
+            font-weight: 500;
+        }
+        .social-links { 
+            display: flex; 
+            gap: 1rem; 
+            flex-wrap: wrap; 
+            margin-top: 1.5rem; 
+        }
+        .social-links a { 
+            color: #121212; 
+            background-color: #00d2ff; 
+            text-decoration: none; 
+            padding: 0.8rem 1.5rem; 
+            border-radius: 8px; 
+            font-weight: bold; 
+            transition: all 0.3s ease; 
+        }
+        .social-links a:hover { 
+            background-color: #0099cc; 
+            transform: translateY(-2px);
+        }
+        .whatsapp-discrete {
+            display: inline-block;
+            margin-top: 2rem;
+            font-size: 0.85rem;
+            color: #666;
+            text-decoration: none;
+            border: 1px solid #444;
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            transition: color 0.3s ease, border-color 0.3s ease;
+        }
+        .whatsapp-discrete:hover {
+            color: #25D366;
+            border-color: #25D366;
+        }
+        footer { 
+            padding: 2rem; 
+            text-align: center; 
+            font-size: 0.9rem; 
+            color: #666; 
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <div class="tecnologias">
-            <i class="fa-brands fa-html5"></i>
-            <i class="fa-brands fa-css3-alt"></i>
-            <i class="fa-brands fa-js"></i>
-            <i class="fa-brands fa-react"></i>
-            <i class="fa-brands fa-node"></i>
-            <i class="fa-brands fa-git-alt"></i>
-            <i class="fa-brands fa-bootstrap"></i>
-        </div>
+        <h1>Laio Zago</h1>
+        <h2>Professor de Matemática & Criador de Conteúdo</h2>
     </header>
-    <main class="principal">
-        <h1 id="titulo-texto">Perfil</h1>
-        <div class="caixa">
-            <nav class="menu">
-                <ul type="checkbox" class="menu_lista">
-                    <li class="selected">Perfil</li>
-                    <li>Curriculo</li>
-                    <li>Projetos</li>
-                    <li>Contato</li>
-                </ul>
-            </nav>
-            <div class="display"></div>
+    
+    <main>
+        <div class="section">
+            <h3>Formação Acadêmica</h3>
+            <ul>
+                <li><strong>Mestrando em Matemática (PROFMAT)</strong> – PUC-Rio</li>
+                <li><strong>Pós-Graduação em Geometria e Cálculo Avançado</strong> – Faculdade Focus</li>
+                <li><strong>Licenciatura em Matemática</strong> – FAFIBE / UNINTER</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>Sobre Mim</h3>
+            <p>Atuo como professor de matemática na rede privada e no sistema municipal de ensino de Petrópolis, RJ. Meu objetivo é transformar a maneira como a matemática é vista, simplificando conceitos complexos por meio de tecnologia, programação e recursos visuais diretos.</p>
+        </div>
+
+        <div class="section">
+            <h3>Projetos em Destaque</h3>
+            <p>Sim, os projetos ficam! Aqui está um resumo do que construo e compartilho online, integrando matemática e programação:</p>
+            <ul>
+                <li><strong>Animações Matemáticas com Manim:</strong> Criação de scripts em Python para gerar demonstrações visuais em 2D e 3D (círculo trigonométrico, planificação de sólidos, funções parabólicas) usadas nas minhas dicas e aulas.</li>
+                <li><strong>Automação de Materiais Didáticos:</strong> Desenvolvimento de um fluxo automatizado em Python (usando bibliotecas como ReportLab) para gerar listas de exercícios em PDF 100% customizadas com fórmulas em KaTeX e cabeçalhos personalizados para cada aluno.</li>
+                <li><strong>Resolução de Provas em Vídeo:</strong> Série de vídeos desdobrando resoluções completas (como a prova do PISM 1), editados, roteirizados e agendados sistematicamente para distribuição no TikTok, YouTube e Instagram.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>Tecnologias & Ferramentas</h3>
+            <div class="skills">
+                <span class="skill-tag">Python (Manim, ReportLab)</span>
+                <span class="skill-tag">GeoGebra</span>
+                <span class="skill-tag">OBS Studio</span>
+                <span class="skill-tag">CapCut</span>
+                <span class="skill-tag">Lousa Digital (OpenBoard)</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>Acompanhe as Dicas</h3>
+            <div class="social-links">
+                <a href="mailto:proflaiozago@gmail.com">E-mail</a>
+                <a href="https://instagram.com/proflaiozago" target="_blank">Instagram</a>
+                <a href="https://tiktok.com/@proflaiozago" target="_blank">TikTok</a>
+                <a href="https://youtube.com/@proflaiozago" target="_blank">YouTube</a>
+            </div>
+        </div>
+        
+        <div style="text-align: center;">
+            <a href="https://wa.me/5521999036284" class="whatsapp-discrete" target="_blank">Contato via WhatsApp</a>
         </div>
     </main>
-    <footer class="rodape">
-        <div class="rodape-copy">
-            <p class="card-text text-light">Copyright <i class="fa-regular fa-copyright"></i> 2022 Laio Zago | Todos os Diretos Reservados</p>
-        </div>
+
+    <footer>
+        &copy; 2026 Laio Zago.
     </footer>
-    <!-- Arquivos JavaScript -->
-    <!-- Main js -->
-    <script src="/js/main.js"></script>
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
